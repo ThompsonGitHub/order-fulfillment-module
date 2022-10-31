@@ -35,8 +35,6 @@ export class InitiateOrderRunRunner extends CommandRunner {
     }
 
     private convertOrderIds(orderIdStrings: string[]): number[] {
-
-
         return orderIdStrings.map(idStr => parseInt(idStr));
     }
 }

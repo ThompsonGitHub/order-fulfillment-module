@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { Product } from 'src/domain/product-aggregate/product';
-import { IProductRepository } from "src/domain/product-aggregate/product-respository-interface";
+import { Product } from '../../domain/product-aggregate/product';
+import { IProductRepository } from "../../domain/product-aggregate/product-respository-interface";
 import { DbContext } from '../DbContext';
 import { ProductDto } from '../dtos/product-dto';
 
