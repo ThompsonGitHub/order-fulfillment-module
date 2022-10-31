@@ -10,7 +10,6 @@ export class Order {
     constructor(
         orderId: number,
         status: OrderStatus,
-        dateCreated: Date,
         orderItems: {
             productId: number, 
             quantity: number}[]

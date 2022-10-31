@@ -26,7 +26,8 @@ export class OrderItem {
 
     fulfill(availableProducts: Product[]): void {
         if (this.canBeFulfilled(availableProducts)) {
-
+            const product = this.findProduct(availableProducts);
+            product.allocateStock(this._quantity);
         } else {
             throw new Error('The order item cannot be fulfilled.');
         }

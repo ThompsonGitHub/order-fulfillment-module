@@ -33,7 +33,7 @@ export class Product {
             throw new Error("Not enough stock available to allocate.");
         }
 
-        this._quantityOnHand =- amountAllocated;
+        this._quantityOnHand -= amountAllocated;
     }
 
     needsReordering(): boolean {
